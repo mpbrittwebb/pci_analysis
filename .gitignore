@@ -1,0 +1,12 @@
+/.DS_Store
+/.ipynb_checkpoints
+/DaycareAttendenceCount.xls
+/DaycareWeeklyReport.xls
+/ExpiredVaccinations.xls
+/TotalDaysBoarded.xls
+/data.csv
+/data.pkl
+/forecasting.ipynb
+/hyperparameter_tuning.csv
+/process_data.ipynb
+/transformer.ipynb
