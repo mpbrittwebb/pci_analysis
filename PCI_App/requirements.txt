@@ -1,0 +1,4 @@
+pandas
+xlrd
+openpyxl  # Optional, if you need .xlsx support as well
+streamlit
