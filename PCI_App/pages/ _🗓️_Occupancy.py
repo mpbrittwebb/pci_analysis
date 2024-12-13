@@ -67,6 +67,22 @@ if file1 and file2:
         st.download_button(
             label="Download data as CSV",
             data=csv,
-            file_name='aggregated_data.csv',
+            file_name='headcount.csv',
             mime='text/csv',
         )
+
+        # Filter the data based on selected dates
+        sorted_filtered_df = sorted_df[(sorted_df['Date'] >= start_date) &
+                                    (sorted_df['Date'] <= end_date)]
+
+        # Download the output
+        st.subheader("Download underlying data (by date and dog/client)")
+        attendance_csv = sorted_filtered_df.to_csv(index=False)
+        st.download_button(
+            label="Download data as CSV",
+            data=attendance_csv,
+            file_name='attendance.csv',
+            mime='text/csv',
+        )
+
+        
